@@ -16,17 +16,17 @@
             <div class="col px-0">
                 <nav class="navbar navbar-expand-lg bg-primary mb-4 " data-bs-theme="dark">
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="#">SISTEMA WEB</a>
+                        <a class="navbar-brand" href="index">SISTEMA WEB</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Cadastrar</a>
+                                    <a class="nav-link" aria-current="page" href="index">Cadastrar</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Consultar</a>
+                                    <a class="nav-link active" href="listar">Consultar</a>
                                 </li>
                             </ul>
                         </div>
@@ -41,14 +41,31 @@
                 
             </div>
         </div>
-        <div class="row text-center bg-primary text-bg-primary">
-            <div class="col">nome</div> 						
-            <div class="col">endereço</div>
-            <div class="col">bairro</div>
-            <div class="col">cep</div>
-            <div class="col">cidade</div>
-            <div class="col">estado</div>
-            <div class="col">ação</div>
+        <div class="table-responsive">
+            <table class="table text-center text-bg-primary ">
+                <thead>
+                    <tr class="table-primary">
+                        <th scope="col">nome</th> 						
+                        <th scope="col">endereço</th>
+                        <th scope="col">bairro</th>
+                        <th scope="col">cep</th>
+                        <th scope="col">cidade</th>
+                        <th scope="col">estado</th>
+                        <th scope="col">ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>1</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
     
