@@ -13,9 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/index', function () {
+Route::get("/", [ClienteController::class, "index"]);
+Route::post("/adicionar", [ClienteController::class, "adicionar"]);
+
+Route::get('/', function () {
     return view('index');
 });
+
 Route::get('/listar', function () {
     return view('listar');
 });
