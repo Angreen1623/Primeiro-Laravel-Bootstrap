@@ -16,14 +16,14 @@
             <div class="col px-0">
                 <nav class="navbar navbar-expand-lg bg-primary mb-4 " data-bs-theme="dark">
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="index">SISTEMA WEB</a>
+                        <a class="navbar-brand" href="/">SISTEMA WEB</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="index">Cadastrar</a>
+                                    <a class="nav-link" aria-current="page" href="/">Cadastrar</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link active" href="listar">Consultar</a>
