@@ -9,7 +9,7 @@ class Cliente extends Model
 {
     use HasFactory;
 
-    protected $filllabel = [
+    protected $fillabel = [
         "nome",
         "telefone",
         "origem",

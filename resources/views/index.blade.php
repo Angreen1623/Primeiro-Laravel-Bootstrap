@@ -41,7 +41,7 @@
                 
             </div>
         </div>
-        <form method="post" action="/adicionar">
+        <form method="post" action="adicionar">
         @csrf
             <div class="row">
                 <div class="col">

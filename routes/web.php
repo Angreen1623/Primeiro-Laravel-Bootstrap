@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ControllerCliente;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,12 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get("/", [ClienteController::class, "index"]);
-Route::post("/adicionar", [ClienteController::class, "adicionar"]);
-
-Route::get('/', function () {
-    return view('index');
-});
+Route::get("/", [ControllerCliente::class, "index"]);
+Route::post("/adicionar", [ControllerCliente::class, "adicionar"]);
 
 Route::get('/listar', function () {
     return view('listar');
