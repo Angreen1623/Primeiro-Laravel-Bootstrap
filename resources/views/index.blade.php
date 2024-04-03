@@ -56,9 +56,9 @@
                     <div class="mb-3">
                     <label for="origem" class="form-label">Origem:</label>
                     <select class="form-select" aria-label="Default select example" name="origem" id="origem">
-                        <option value="0" selected>Celular</option>
-                        <option value="1">Fixo</option>
-                        <option value="2">Residencial</option>
+                        <option value="Celular" selected>Celular</option>
+                        <option value="Fixo">Fixo</option>
+                        <option value="Residencial">Residencial</option>
                     </select>
                     </div>
                     <div class="mb-3">

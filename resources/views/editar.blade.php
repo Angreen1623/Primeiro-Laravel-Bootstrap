@@ -41,7 +41,7 @@
                 
             </div>
         </div>
-        <form method="get" action="/atualizar/{{$contato->id}}">
+        <form method="Post" action="/atualizar/{{$cliente->id}}">
         @csrf
             <div class="row">
                 <div class="col">
@@ -51,14 +51,11 @@
                     </div>
                     <div class="mb-3">
                         <label for="telefone" class="form-label">Telefone:</label>
-                        <input type="text" class="form-control" value="{{$cliente->email}}" id="telefone" name="telefone">
+                        <input type="text" class="form-control" value="{{$cliente->telefone}}" id="telefone" name="telefone">
                     </div>
                     <div class="mb-3">
                     <label for="origem" class="form-label">Origem:</label>
-                    <select class="form-select" aria-label="Default select example" value="{{$cliente->origem}}" name="origem" id="origem">
-                        <option value="0" selected>Celular</option>
-                        <option value="1">Fixo</option>
-                        <option value="2">Residencial</option>
+                    <input type="text" class="form-control" value="{{$cliente->origem}}" id="nome" name="nome" readonly>
                     </select>
                     </div>
                     <div class="mb-3">
@@ -67,7 +64,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="observacao" class="form-label">Observação:</label>
-                        <textarea class="form-control" value="{{$cliente->observacao}}" id="observacao" name="observacao" rows="5"></textarea>
+                        <textarea class="form-control" id="observacao" name="observacao" rows="5">{{$cliente->observacao}}</textarea>
                     </div>
                     
                 </div>

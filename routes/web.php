@@ -14,13 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get("/",                [ControllerCliente::class, "index"]);
+Route::get("/listar",          [ControllerCliente::class, "index"]);
 Route::post("/adicionar",      [ControllerCliente::class, "adicionar"]);
-Route::get("/editar/{id}",     [ControllerCliente::class, "editar"]); //edita o texto
+Route::get("/editar/{id}",     [ControllerCliente::class, "editar"]);
 Route::post("/atualizar/{id}", [ControllerCliente::class, "atualizar"]); //atualiza o banco
 Route::get("/excluir/{id}",    [ControllerCliente::class, "excluir"]);
 
-Route::get('/listar', function () {
-    return view('listar');
+Route::get('/', function () {
+    return view('index');
 });
-
