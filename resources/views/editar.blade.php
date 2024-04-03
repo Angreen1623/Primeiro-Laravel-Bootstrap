@@ -41,21 +41,21 @@
                 
             </div>
         </div>
-        <form method="post" action="/adicionar">
+        <form method="get" action="/atualizar/{{$contato->id}}">
         @csrf
             <div class="row">
                 <div class="col">
                     <div class="mb-3">
                         <label for="nome" class="form-label">Nome:</label>
-                        <input type="text" class="form-control" id="nome" name="nome">
+                        <input type="text" class="form-control" value="{{$cliente->nome}}" id="nome" name="nome">
                     </div>
                     <div class="mb-3">
                         <label for="telefone" class="form-label">Telefone:</label>
-                        <input type="text" class="form-control" id="telefone" name="telefone">
+                        <input type="text" class="form-control" value="{{$cliente->email}}" id="telefone" name="telefone">
                     </div>
                     <div class="mb-3">
                     <label for="origem" class="form-label">Origem:</label>
-                    <select class="form-select" aria-label="Default select example" name="origem" id="origem">
+                    <select class="form-select" aria-label="Default select example" value="{{$cliente->origem}}" name="origem" id="origem">
                         <option value="0" selected>Celular</option>
                         <option value="1">Fixo</option>
                         <option value="2">Residencial</option>
@@ -63,11 +63,11 @@
                     </div>
                     <div class="mb-3">
                         <label for="dadoContato" class="form-label">Data do Contato:</label>
-                        <input type="date" class="form-control" id="dadoContato" name="dadoContato" placeholder="02/02/2024">
+                        <input type="date" class="form-control" value="{{$cliente->dadoContato}}" id="dadoContato" name="dadoContato" placeholder="02/02/2024">
                     </div>
                     <div class="mb-3">
                         <label for="observacao" class="form-label">Observação:</label>
-                        <textarea class="form-control" id="observacao" name="observacao" rows="5"></textarea>
+                        <textarea class="form-control" value="{{$cliente->observacao}}" id="observacao" name="observacao" rows="5"></textarea>
                     </div>
                     
                 </div>
