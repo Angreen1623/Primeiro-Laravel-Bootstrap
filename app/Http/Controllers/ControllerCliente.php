@@ -32,7 +32,7 @@ class ControllerCliente extends Controller
 
     public function atualizar(Request $req){
         $cliente = Cliente::find($req->id);
-        update(
+        $cliente->update(
             [
             "nome" => $req->nome,
             "telefone" => $req->telefone,
