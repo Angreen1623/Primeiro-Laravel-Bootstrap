@@ -55,7 +55,7 @@
                     </div>
                     <div class="mb-3">
                     <label for="origem" class="form-label">Origem:</label>
-                    <input type="text" class="form-control" value="{{$cliente->origem}}" id="nome" name="nome" readonly>
+                    <input type="text" class="form-control" value="{{$cliente->origem}}" id="origem" name="origem" readonly>
                     </select>
                     </div>
                     <div class="mb-3">

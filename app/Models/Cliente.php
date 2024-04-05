@@ -14,6 +14,6 @@ class Cliente extends Model
         "telefone",
         "origem",
         "dadoContato",
-        "observacao"
+        "observacao",
     ];
 }

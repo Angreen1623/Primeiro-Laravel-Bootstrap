@@ -2,17 +2,20 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Cliente;
 
 class ControllerCliente extends Controller
 {
-    public function index(Request $req){
+    public function index(Request $req)
+    {
         $cliente = Cliente::all();
         return view('listar')->with("cliente", $cliente);
     }
 
-    public function adicionar(Request $req){
+    public function adicionar(Request $req)
+    {
         $cliente =              new Cliente;
         $cliente->nome =        $req->nome;
         $cliente->telefone =    $req->telefone;
@@ -25,21 +28,31 @@ class ControllerCliente extends Controller
         return redirect()->back();
     }
 
-    public function editar(Request $req){
+    public function editar(Request $req)
+    {
         $cliente = Cliente::find($req->id);
         return view('editar')->with("cliente", $cliente);
     }
 
-    public function atualizar(Request $req){
+    public function atualizar(Request $req)
+    {
         $cliente = Cliente::find($req->id);
         $cliente->update(
             [
-            "nome" => $req->nome,
-            "telefone" => $req->telefone,
-            "origem" => $req->origem,
-            "dadoContato" => $req->dadoContato,
-            "observacao" => $req->observacao
-            ]
-            );
+                'nome' => $req->nome,
+                'telefone' => $req->telefone,
+                'origem' => $req->origem,
+                'dadoContato' => $req->dadoContato,
+                'observacao' => $req->observacao,
+
+            ]);
+    }
+
+
+
+    public function excluir(Request $req){
+        $cliente = Cliente::find($req->id);
+        $cliente->delete();
+        return redirect()->back();
     }
 }
